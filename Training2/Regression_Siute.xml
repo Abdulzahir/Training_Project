@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Adhock">
+
+<listeners>
+<listener class-name="Com.facebook.Auto.Training2.App"></listener>
+</listeners>
+<test name="Regression">
+<parameter name="url" value="https://facebook.com/"></parameter>
+
+<parameter name="browser" value="chrome"></parameter>
+<!--><parameter name="web" value="https://www.amazon.com/"></parameter< -->
+<!--><parameter name="web" value="Fairfox"></parameter><-->
+<!--><parameter name="url" value="https://jqueryui.com/droppable/"></parameter>< -->
+<classes>
+<class name="Run.Testdata"></class>
+<!-- <class name="Run.Forgottenpass"></class> -->
+<!--><class name="Com.Amazon.Prime.functional_offer.AmazonTest"></class>< -->
+<!--><class name="Com.Amazon.Prime.functional_offer.Firefox"></class>< -->
+</classes>
+</test>
+<test name="IT">
+<parameter name="url" value="https://facebook.com/"></parameter>
+<parameter name="browser" value="firefox"></parameter>
+<classes>
+<class name="Run.Testdata"></class>
+<!-- <class name="Run.Forgottenpass"></class> -->
+</classes>
+</test>
+</suite>
